@@ -1,0 +1,25 @@
+# ============================================================
+# StormWatch — locked files
+# ============================================================
+# Secrets live ONLY in config.local.js (loaded by index.html via a
+# <script src> tag; the gitignored copy is the single source of truth).
+# window.STORMWATCH_CONFIG stays null when this file is absent.
+
+# ---- THE locked file: real keys, never commit ----
+config.local.js
+
+# ---- Local env / tooling debris ----
+.env
+.env.*
+*.local
+!config.example.js
+
+# ---- OS / editor junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# ---- QA artifacts / screenshots ----
+*-proof.png
